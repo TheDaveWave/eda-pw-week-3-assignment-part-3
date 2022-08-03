@@ -49,6 +49,13 @@ for (x = 0; x < supplyChanges.length-1; x++) {
     }
 }
 
+// You cannnot remove a negative amount of parts, that is technically adding parts.
+// So here is a fix. Using Javascript's built in Math object we can use its absolute value function.
+console.log('6. Properly Displayed Removed Parts');
+for (let parts of supplyChanges) {
+    console.log(parts > 0 ? `Added ${Math.abs(parts)} parts.` : parts < 0 ? `Removed ${Math.abs(parts)} parts.`: 'No Change.');
+}
+
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop. 
