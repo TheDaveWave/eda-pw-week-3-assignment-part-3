@@ -4,6 +4,8 @@ console.log('****** Part Supply *******');
 // 1. Create a variable called 'partsNeeded' with a value of the number 40 
 //    & console.log the variable
 console.log('1. Number of partsNeeded:');
+const partsNeeded = 40;
+console.log(partsNeeded);
 
 // 2. Create a variable call 'supplyChanges' set it to an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11
