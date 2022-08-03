@@ -60,6 +60,11 @@ for (let parts of supplyChanges) {
 console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop. 
 console.log('7. Showing supplyChanges with "for of" loop');
+// Did not realize this was gonna be the stretch goal and already wrote a for of loop for 6.
+// So copy-paste I guess. Lol
+for (let parts of supplyChanges) {
+    console.log(parts > 0 ? `Added ${Math.abs(parts)} parts.` : parts < 0 ? `Removed ${Math.abs(parts)} parts.`: 'No Change.');
+}
 
 // 8. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
